@@ -8,7 +8,7 @@ Nos movemos a la ruta de la app
 
 	$ cd /ruta/de/app
 
-Iniciamos el servidor
+Iniciamos el servidor con:
 
 	$ ./manage.py runserver
 
