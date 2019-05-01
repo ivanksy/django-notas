@@ -10,7 +10,7 @@
 
 #### Iniciar git
 
-	$ git init .
+	$ git init
 
 #### Crear entorno virtual
 
