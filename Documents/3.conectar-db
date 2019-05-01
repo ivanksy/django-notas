@@ -9,6 +9,10 @@ Instalaremos el paquete `django-environ` para dar seguridad al campo `SECRET KEY
 Crearemos un archivo `.env` en el directorio donde se encuentra nuestro `settings.py`
 
 	$ touch .env
+
+Creamos un archivo `.gitignore` en el directorio principal del proyecto y agregamos la siguiente línea:
+
+	.env
     
 Añadiremos las siguientes líneas al archivo `.env`:
 

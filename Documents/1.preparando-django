@@ -1,30 +1,29 @@
-># Notas Django
+># Preparando Django
 
-#### Crear directorio del proyecto
+Creamos el directorio del proyecto
 
 	$ mkdir /ruta/del/proyecto
 
-#### Moverse a la ruta del directorio
+Nos movemos a la ruta del directorio
 
 	$ cd /ruta/del/proyecto
 
-#### Iniciar git
+Iniciamos git
 
 	$ git init
 
-#### Crear entorno virtual
+Creamos un entorno virtual
 
 	$ virtualenv .env
 
-#### Activar entorno virtual
+Activamos el entorno virtual
 
 	$ source .env/bin/activate
 
-#### Actualizar pip
+Actualizamos pip
 
 	$ pip install --upgrade pip
 
-#### Instalar django, django-materialize, PyMySQL, etc.
+Instalamos django, django-materialize, PyMySQL, mysqlclient, etc.
 
-	$ pip install -U django django-materialize PyMySQL
-
+	$ pip install -U django django-materialize PyMySQL mysqlclient
