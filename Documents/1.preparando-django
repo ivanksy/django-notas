@@ -1,0 +1,30 @@
+># Notas Django
+
+#### Crear directorio del proyecto
+
+	$ mkdir /ruta/del/proyecto
+
+#### Moverse a la ruta del directorio
+
+	$ cd /ruta/del/proyecto
+
+#### Iniciar git
+
+	$ git init .
+
+#### Crear entorno virtual
+
+	$ virtualenv .env
+
+#### Activar entorno virtual
+
+	$ source .env/bin/activate
+
+#### Actualizar pip
+
+	$ pip install --upgrade pip
+
+#### Instalar django, django-materialize, PyMySQL, etc.
+
+	$ pip install -U django django-materialize PyMySQL
+

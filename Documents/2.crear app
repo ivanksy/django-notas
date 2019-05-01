@@ -1,0 +1,17 @@
+># Crear App
+
+#### Crear app
+
+	$ django-admin startproject nombre-app
+
+#### Moverse a la ruta de la app
+
+	$ cd /ruta/de/app
+
+#### Iniciar app
+
+	$ ./manage.py runserver
+
+#### Abrir URL en navegador
+
+	http://127.0.0.1:8000/

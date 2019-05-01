@@ -1,0 +1,48 @@
+># Conectar a base de datos
+
+#### django-environ
+
+Instalaremos el paquete `django-environ` para dar seguridad al campo `SECRET KEY` y al campo `DATABASE`.
+	
+	$ pip install -U django-environ
+    
+Crearemos un archivo `.env` en el directorio donde se encuentra nuestro `settings.py`
+
+	$ touch .env
+    
+Añadiremos las siguientes líneas al archivo `.env`:
+
+	SECRET_KEY='tu.clave'
+    DATABASE_URL=mysql://usuario:contraseña@host:puerto/base-de-datos
+
+Editaremos el archivo `settings.py` y añadimos:
+	
+    ...
+    
+    import environ
+	
+    env = environ.Env(
+    DEBUG=(bool, False) )                         
+    
+	# leyendo archivo .env
+	environ.Env.read_env()
+    
+    SECRET_KEY = env('SECRET_KEY')
+    
+    DEBUG = env('DEBUG')
+
+	ALLOWED_HOSTS = ['*']
+
+    INSTALLED_APPS = [ 
+    ...
+    'nombre-de-app',
+    ]
+    
+    DATABASES = {
+    'default': env.db() }
+    
+Aplicamos las migraciones:
+
+	$ ./manage.py makemigrations
+    $ ./manage.py migrate
+    
